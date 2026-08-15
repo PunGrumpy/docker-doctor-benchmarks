@@ -1,0 +1,59 @@
+name: Scan
+
+# Re-scans every repo in repos.yaml with the pinned @docker-doctor/cli and
+# opens a PR updating results/ — never a direct push, so every score change
+# gets a human review before the leaderboard picks it up.
+#
+#   - schedule: monthly refresh
+#   - workflow_dispatch: opt-in additions, re-scan requests, CLI bumps
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Scan repos
+        run: bun run scan
+
+      - name: Open results PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Stage first and diff the index — a plain `git diff` misses
+          # files results/ gains for the first time (untracked).
+          git add results
+          if git diff --cached --quiet; then
+            echo "results/ unchanged, nothing to do"
+            exit 0
+          fi
+          branch="scan-results-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git commit -m "chore: refresh scan results ($(date -u +%Y-%m-%d))"
+          git push -u origin "$branch" --force
+          if ! gh pr create \
+            --title "Refresh scan results ($(date -u +%Y-%m-%d))" \
+            --body "Automated re-scan. Review score changes before merging — the leaderboard page reads results/leaderboard.json from main." \
+            --base main --head "$branch"; then
+            # Tolerate a PR already open for this branch; anything else is
+            # a real failure (e.g. Actions not allowed to create PRs).
+            test "$(gh pr list --head "$branch" --json number --jq 'length')" -ge 1
+          fi
