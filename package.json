@@ -1,0 +1,11 @@
+{
+  "name": "docker-doctor-benchmarks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "node scripts/scan.mjs"
+  },
+  "dependencies": {
+    "yaml": "^2.8.0"
+  }
+}
