@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/dubinc/dub",
+  "name": "Dub",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "dub",
+  "commitSha": "8dcff67801b65ea390674abf272b3d579ea3f27c",
+  "composeFileCount": 1,
+  "dockerfileCount": 0,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 1,
+  "scanElapsedMs": 1012,
+  "scannedAt": "2026-08-15T07:22:42.088Z",
+  "score": 70,
+  "scoreLabel": "Needs Work ⚠️",
+  "status": "ok",
+  "totalDiagnosticCount": 7,
+  "warningCount": 6
+}

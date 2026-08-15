@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/metabase/metabase",
+  "name": "Metabase",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "metabase",
+  "commitSha": "45dfb5a83799390c401c502948f9ce68ba532bc2",
+  "composeFileCount": 6,
+  "dockerfileCount": 5,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 16,
+  "scanElapsedMs": 1617,
+  "scannedAt": "2026-08-15T07:22:54.803Z",
+  "score": 2,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 85,
+  "warningCount": 69
+}

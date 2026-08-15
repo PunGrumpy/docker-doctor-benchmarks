@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/umami-software/umami",
+  "name": "Umami",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "umami",
+  "commitSha": "de474a1da915d4666768cad0af0bed5b3449d661",
+  "composeFileCount": 1,
+  "dockerfileCount": 1,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 4,
+  "scanElapsedMs": 936,
+  "scannedAt": "2026-08-15T07:23:05.899Z",
+  "score": 80,
+  "scoreLabel": "Good ✅",
+  "status": "ok",
+  "totalDiagnosticCount": 7,
+  "warningCount": 3
+}

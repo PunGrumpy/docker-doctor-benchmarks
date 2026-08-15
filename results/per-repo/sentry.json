@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/getsentry/sentry",
+  "name": "Sentry",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "sentry",
+  "commitSha": "6b9292a731d5f6a67f046602248a7bcfc7306e4b",
+  "composeFileCount": 0,
+  "dockerfileCount": 1,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 2,
+  "scanElapsedMs": 1583,
+  "scannedAt": "2026-08-15T07:22:44.766Z",
+  "score": 73,
+  "scoreLabel": "Needs Work ⚠️",
+  "status": "ok",
+  "totalDiagnosticCount": 7,
+  "warningCount": 5
+}

@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/twentyhq/twenty",
+  "name": "Twenty",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "twenty",
+  "commitSha": "ff44e3736cbb2b0398415a2f8963aca7f313bf79",
+  "composeFileCount": 2,
+  "dockerfileCount": 3,
+  "errorCount": 1,
+  "errorMessage": null,
+  "infoCount": 14,
+  "scanElapsedMs": 1755,
+  "scannedAt": "2026-08-15T07:23:04.961Z",
+  "score": 36,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 27,
+  "warningCount": 12
+}

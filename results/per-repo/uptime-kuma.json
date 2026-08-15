@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/louislam/uptime-kuma",
+  "name": "Uptime Kuma",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "uptime-kuma",
+  "commitSha": "b980621689b2e3b978dcdd3a99a3ad8cf81c9b9b",
+  "composeFileCount": 3,
+  "dockerfileCount": 4,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 8,
+  "scanElapsedMs": 1565,
+  "scannedAt": "2026-08-15T07:22:51.786Z",
+  "score": 40,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 22,
+  "warningCount": 14
+}

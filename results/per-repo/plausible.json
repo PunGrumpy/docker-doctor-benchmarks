@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/plausible/analytics",
+  "name": "Plausible",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "plausible",
+  "commitSha": "a3fd4b9a5a0d8224147296a09af609c022bf0dec",
+  "composeFileCount": 0,
+  "dockerfileCount": 1,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 2,
+  "scanElapsedMs": 1647,
+  "scannedAt": "2026-08-15T07:23:00.181Z",
+  "score": 97,
+  "scoreLabel": "Excellent 🏆",
+  "status": "ok",
+  "totalDiagnosticCount": 2,
+  "warningCount": 0
+}

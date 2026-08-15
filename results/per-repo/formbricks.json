@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/formbricks/formbricks",
+  "name": "Formbricks",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "formbricks",
+  "commitSha": "ace2c9b90d1ea2fe60e571cfef9dc3e3edf6340a",
+  "composeFileCount": 2,
+  "dockerfileCount": 1,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 5,
+  "scanElapsedMs": 1091,
+  "scannedAt": "2026-08-15T07:22:43.181Z",
+  "score": 14,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 38,
+  "warningCount": 33
+}

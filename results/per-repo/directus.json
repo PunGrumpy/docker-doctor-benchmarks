@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/directus/directus",
+  "name": "Directus",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "directus",
+  "commitSha": "cb846b6a1ddc4811359bc52b74bb31a42eab33db",
+  "composeFileCount": 2,
+  "dockerfileCount": 2,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 7,
+  "scanElapsedMs": 1058,
+  "scannedAt": "2026-08-15T07:22:41.074Z",
+  "score": 3,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 66,
+  "warningCount": 59
+}

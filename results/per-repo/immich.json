@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/immich-app/immich",
+  "name": "Immich",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "immich",
+  "commitSha": "f9c05af45f86aaf2ed2f008dd652c7bfef023528",
+  "composeFileCount": 6,
+  "dockerfileCount": 5,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 19,
+  "scanElapsedMs": 1403,
+  "scannedAt": "2026-08-15T07:22:50.219Z",
+  "score": 3,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 77,
+  "warningCount": 58
+}
