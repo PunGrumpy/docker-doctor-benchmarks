@@ -3,9 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "scan": "node scripts/scan.mjs"
+    "scan": "bun scripts/scan.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "yaml": "^2.8.0"
+    "yaml": "^2.8.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
   }
 }

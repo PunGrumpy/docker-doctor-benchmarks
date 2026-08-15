@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 // Scans every repo in repos.yaml with a pinned @docker-doctor/cli and writes
 // results/latest.json, results/leaderboard.json, and results/per-repo/<slug>.json.
 // Run with `bun run scan` (needs git + bunx on PATH).
@@ -13,11 +13,17 @@
 //   status "error", never ranked (an empty checkout would otherwise score
 //   a perfect 100).
 
-import { spawnSync } from "node:child_process";
+import { spawnSync, type SpawnSyncOptions } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { parse as parseYaml } from "yaml";
+
+import { loadConfig, type RepoTarget } from "./lib/config";
+import type {
+  DoctorJsonReport,
+  LeaderboardEntry,
+  ScanResult,
+} from "./lib/types";
 
 const DOCTOR_VERSION = "0.4.1";
 const RESULTS_SCHEMA_VERSION = 1;
@@ -40,7 +46,7 @@ const ROOT = new URL("..", import.meta.url);
 const RESULTS_DIR = new URL("./results/", ROOT);
 const PER_REPO_DIR = new URL("./per-repo/", RESULTS_DIR);
 
-const run = (cmd, args, opts = {}) => {
+const run = (cmd: string, args: string[], opts: SpawnSyncOptions = {}) => {
   const res = spawnSync(cmd, args, {
     encoding: "utf8",
     maxBuffer: 64 * 1024 * 1024,
@@ -52,15 +58,17 @@ const run = (cmd, args, opts = {}) => {
   return res;
 };
 
-const git = (args, cwd, timeout) => {
+const git = (args: string[], cwd?: string, timeout?: number): string => {
   const res = run("git", args, { cwd, timeout });
   if (res.status !== 0) {
-    throw new Error(`git ${args[0]} failed: ${res.stderr.trim().slice(0, 300)}`);
+    throw new Error(
+      `git ${args[0]} failed: ${String(res.stderr).trim().slice(0, 300)}`
+    );
   }
-  return res.stdout.trim();
+  return String(res.stdout).trim();
 };
 
-const scanRepo = ({ githubUrl, name, ref, slug }) => {
+const scanRepo = ({ githubUrl, name, ref, slug }: RepoTarget): ScanResult => {
   const startedAt = Date.now();
   const base = {
     doctorVersion: DOCTOR_VERSION,
@@ -96,11 +104,12 @@ const scanRepo = ({ githubUrl, name, ref, slug }) => {
     const commitSha = git(["rev-parse", "HEAD"], dir);
 
     // Exit code is score-dependent — parseable stdout is the success signal.
-    const res = run("bunx", [`@docker-doctor/cli@${DOCTOR_VERSION}`, "--json"], {
-      cwd: dir,
-      timeout: SCAN_TIMEOUT_MS,
-    });
-    const report = JSON.parse(res.stdout);
+    const res = run(
+      "bunx",
+      [`@docker-doctor/cli@${DOCTOR_VERSION}`, "--json"],
+      { cwd: dir, timeout: SCAN_TIMEOUT_MS }
+    );
+    const report = JSON.parse(String(res.stdout)) as DoctorJsonReport;
     if (report.schemaVersion !== REPORT_SCHEMA_VERSION) {
       throw new Error(
         `CLI report schemaVersion ${report.schemaVersion} != ${REPORT_SCHEMA_VERSION}; scores would not be comparable`
@@ -138,7 +147,7 @@ const scanRepo = ({ githubUrl, name, ref, slug }) => {
     return {
       ...base,
       commitSha: null,
-      errorMessage: String(err.message ?? err),
+      errorMessage: err instanceof Error ? err.message : String(err),
       scanElapsedMs: Date.now() - startedAt,
       scannedAt: new Date().toISOString(),
       score: null,
@@ -149,25 +158,14 @@ const scanRepo = ({ githubUrl, name, ref, slug }) => {
   }
 };
 
-const config = parseYaml(
-  fs.readFileSync(new URL("./repos.yaml", ROOT), "utf8")
-);
-const repos = config.repos;
+const writeJson = (url: URL, value: unknown): void => {
+  fs.writeFileSync(url, `${JSON.stringify(value, null, 2)}\n`);
+};
 
-const slugs = new Set();
-for (const repo of repos) {
-  if (!(repo.slug && repo.name && repo.githubUrl)) {
-    throw new Error(`repos.yaml entry missing slug/name/githubUrl: ${JSON.stringify(repo)}`);
-  }
-  if (slugs.has(repo.slug)) {
-    throw new Error(`repos.yaml has a duplicate slug: ${repo.slug}`);
-  }
-  slugs.add(repo.slug);
-}
-
+const repos = loadConfig(new URL("./repos.yaml", ROOT));
 fs.mkdirSync(PER_REPO_DIR, { recursive: true });
 
-const results = [];
+const results: ScanResult[] = [];
 for (const target of repos) {
   const entry = scanRepo(target);
   results.push(entry);
@@ -177,10 +175,6 @@ for (const target of repos) {
       : `FAIL ${entry.slug}: ${entry.errorMessage}`
   );
 }
-
-const writeJson = (url, value) => {
-  fs.writeFileSync(url, `${JSON.stringify(value, null, 2)}\n`);
-};
 
 const generatedAt = new Date().toISOString();
 
@@ -195,8 +189,8 @@ writeJson(new URL("./latest.json", RESULTS_DIR), {
   schemaVersion: RESULTS_SCHEMA_VERSION,
 });
 
-const ranked = results
-  .filter((entry) => entry.status === "ok")
+const ranked: LeaderboardEntry[] = results
+  .filter((entry): entry is Extract<ScanResult, { status: "ok" }> => entry.status === "ok")
   .sort((a, b) => b.score - a.score || a.slug.localeCompare(b.slug))
   .map((entry) => ({
     commitSha: entry.commitSha,
@@ -220,9 +214,7 @@ writeJson(new URL("./leaderboard.json", RESULTS_DIR), {
 });
 
 const failed = results.length - ranked.length;
-console.error(
-  `wrote results/: ${ranked.length} scored, ${failed} failed`
-);
+console.error(`wrote results/: ${ranked.length} scored, ${failed} failed`);
 
 // A few flaky repos must not kill the monthly run, but a majority failing
 // means the scanner itself is broken.
