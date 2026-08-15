@@ -1,4 +1,5 @@
 import fs from "node:fs";
+
 import { parse as parseYaml } from "yaml";
 import { z } from "zod";
 
@@ -6,7 +7,7 @@ const repoSchema = z.object({
   githubUrl: z
     .string()
     .regex(
-      /^https:\/\/github\.com\/[^/]+\/[^/]+$/,
+      /^https:\/\/github\.com\/[^/]+\/[^/]+$/u,
       "githubUrl must be https://github.com/<owner>/<repo>"
     ),
   name: z.string().min(1),
@@ -14,7 +15,7 @@ const repoSchema = z.object({
   ref: z.string().min(1).optional(),
   slug: z
     .string()
-    .regex(/^[a-z0-9][a-z0-9-]*$/, "slug must be filename-safe kebab-case"),
+    .regex(/^[a-z0-9][a-z0-9-]*$/u, "slug must be filename-safe kebab-case"),
 });
 
 const configSchema = z.object({
@@ -25,7 +26,7 @@ export type RepoTarget = z.infer<typeof repoSchema>;
 
 export const loadConfig = (url: URL): RepoTarget[] => {
   const { repos } = configSchema.parse(
-    parseYaml(fs.readFileSync(url, "utf8"))
+    parseYaml(fs.readFileSync(url, "utf-8"))
   );
   const slugs = new Set<string>();
   for (const repo of repos) {

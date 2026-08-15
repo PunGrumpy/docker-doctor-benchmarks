@@ -13,12 +13,14 @@
 //   status "error", never ranked (an empty checkout would otherwise score
 //   a perfect 100).
 
-import { spawnSync, type SpawnSyncOptions } from "node:child_process";
+import { spawnSync } from "node:child_process";
+import type { SpawnSyncOptions } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-import { loadConfig, type RepoTarget } from "./lib/config";
+import { loadConfig } from "./lib/config";
+import type { RepoTarget } from "./lib/config";
 import type {
   DoctorJsonReport,
   LeaderboardEntry,
@@ -27,7 +29,8 @@ import type {
 
 const DOCTOR_VERSION = "0.4.1";
 const RESULTS_SCHEMA_VERSION = 1;
-const REPORT_SCHEMA_VERSION = 2; // @docker-doctor/core JsonReport schema
+// @docker-doctor/core JsonReport schema
+const REPORT_SCHEMA_VERSION = 2;
 
 const SPARSE_PATTERNS = [
   "**/Dockerfile*",
@@ -43,12 +46,12 @@ const CLONE_TIMEOUT_MS = 180_000;
 const SCAN_TIMEOUT_MS = 120_000;
 
 const ROOT = new URL("..", import.meta.url);
-const RESULTS_DIR = new URL("./results/", ROOT);
-const PER_REPO_DIR = new URL("./per-repo/", RESULTS_DIR);
+const RESULTS_DIR = new URL("results/", ROOT);
+const PER_REPO_DIR = new URL("per-repo/", RESULTS_DIR);
 
 const run = (cmd: string, args: string[], opts: SpawnSyncOptions = {}) => {
   const res = spawnSync(cmd, args, {
-    encoding: "utf8",
+    encoding: "utf-8",
     maxBuffer: 64 * 1024 * 1024,
     ...opts,
   });
@@ -143,11 +146,11 @@ const scanRepo = ({ githubUrl, name, ref, slug }: RepoTarget): ScanResult => {
       totalDiagnosticCount: report.diagnostics.length,
       warningCount: counts.warning,
     };
-  } catch (err) {
+  } catch (error) {
     return {
       ...base,
       commitSha: null,
-      errorMessage: err instanceof Error ? err.message : String(err),
+      errorMessage: error instanceof Error ? error.message : String(error),
       scanElapsedMs: Date.now() - startedAt,
       scannedAt: new Date().toISOString(),
       score: null,
@@ -162,7 +165,7 @@ const writeJson = (url: URL, value: unknown): void => {
   fs.writeFileSync(url, `${JSON.stringify(value, null, 2)}\n`);
 };
 
-const repos = loadConfig(new URL("./repos.yaml", ROOT));
+const repos = loadConfig(new URL("repos.yaml", ROOT));
 fs.mkdirSync(PER_REPO_DIR, { recursive: true });
 
 const results: ScanResult[] = [];
@@ -179,10 +182,10 @@ for (const target of repos) {
 const generatedAt = new Date().toISOString();
 
 for (const entry of results) {
-  writeJson(new URL(`./${entry.slug}.json`, PER_REPO_DIR), entry);
+  writeJson(new URL(`${entry.slug}.json`, PER_REPO_DIR), entry);
 }
 
-writeJson(new URL("./latest.json", RESULTS_DIR), {
+writeJson(new URL("latest.json", RESULTS_DIR), {
   doctorVersion: DOCTOR_VERSION,
   generatedAt,
   results,
@@ -190,8 +193,11 @@ writeJson(new URL("./latest.json", RESULTS_DIR), {
 });
 
 const ranked: LeaderboardEntry[] = results
-  .filter((entry): entry is Extract<ScanResult, { status: "ok" }> => entry.status === "ok")
-  .sort((a, b) => b.score - a.score || a.slug.localeCompare(b.slug))
+  .filter(
+    (entry): entry is Extract<ScanResult, { status: "ok" }> =>
+      entry.status === "ok"
+  )
+  .toSorted((a, b) => b.score - a.score || a.slug.localeCompare(b.slug))
   .map((entry) => ({
     commitSha: entry.commitSha,
     composeFileCount: entry.composeFileCount,
@@ -206,7 +212,7 @@ const ranked: LeaderboardEntry[] = results
     warningCount: entry.warningCount,
   }));
 
-writeJson(new URL("./leaderboard.json", RESULTS_DIR), {
+writeJson(new URL("leaderboard.json", RESULTS_DIR), {
   doctorVersion: DOCTOR_VERSION,
   entries: ranked,
   generatedAt,
