@@ -35,13 +35,16 @@ jobs:
       - name: Scan repos
         run: bun run scan
 
+      - name: Render README table
+        run: bun run render
+
       - name: Open results PR
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           # Stage first and diff the index — a plain `git diff` misses
           # files results/ gains for the first time (untracked).
-          git add results
+          git add results README.md
           if git diff --cached --quiet; then
             echo "results/ unchanged, nothing to do"
             exit 0
