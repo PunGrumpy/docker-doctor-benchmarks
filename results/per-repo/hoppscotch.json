@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/hoppscotch/hoppscotch",
+  "name": "Hoppscotch",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "hoppscotch",
+  "commitSha": "1acb8a3a7581e4db32ba0d529170c4669a2e1053",
+  "composeFileCount": 2,
+  "dockerfileCount": 3,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 13,
+  "scanElapsedMs": 1335,
+  "scannedAt": "2026-08-15T07:22:48.814Z",
+  "score": 20,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 38,
+  "warningCount": 25
+}

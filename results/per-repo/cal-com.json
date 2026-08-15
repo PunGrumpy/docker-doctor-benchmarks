@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/calcom/cal.com",
+  "name": "Cal.com",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "cal-com",
+  "commitSha": "176037d0afbe572f870a3c702985e7cd83fe6c0c",
+  "composeFileCount": 5,
+  "dockerfileCount": 2,
+  "errorCount": 1,
+  "errorMessage": null,
+  "infoCount": 11,
+  "scanElapsedMs": 1399,
+  "scannedAt": "2026-08-15T07:22:40.014Z",
+  "score": 28,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 29,
+  "warningCount": 17
+}

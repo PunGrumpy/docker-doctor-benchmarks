@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/n8n-io/n8n",
+  "name": "n8n",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "n8n",
+  "commitSha": "b186fa87c1b5bb9ffd6562d305ebc611a53e1cce",
+  "composeFileCount": 7,
+  "dockerfileCount": 10,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 38,
+  "scanElapsedMs": 1654,
+  "scannedAt": "2026-08-15T07:22:56.459Z",
+  "score": 1,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 107,
+  "warningCount": 69
+}

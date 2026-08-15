@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/appsmithorg/appsmith",
+  "name": "Appsmith",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "appsmith",
+  "commitSha": "6902861b0a2266c2307dad8ab93ae40e332b0901",
+  "composeFileCount": 2,
+  "dockerfileCount": 5,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 10,
+  "scanElapsedMs": 1592,
+  "scannedAt": "2026-08-15T07:22:38.613Z",
+  "score": 33,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 27,
+  "warningCount": 17
+}

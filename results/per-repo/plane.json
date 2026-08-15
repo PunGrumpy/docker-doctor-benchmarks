@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/makeplane/plane",
+  "name": "Plane",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "plane",
+  "commitSha": "1c8a60f858d8472aa56e29994ec1c7926da2c6ce",
+  "composeFileCount": 2,
+  "dockerfileCount": 12,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 46,
+  "scanElapsedMs": 1396,
+  "scannedAt": "2026-08-15T07:22:53.183Z",
+  "score": 3,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 94,
+  "warningCount": 48
+}

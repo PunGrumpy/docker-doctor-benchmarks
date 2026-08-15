@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/grafana/grafana",
+  "name": "Grafana",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "grafana",
+  "commitSha": "59a8cbb6cd0d7a0946767fee57510ac96af8f112",
+  "composeFileCount": 64,
+  "dockerfileCount": 32,
+  "errorCount": 2,
+  "errorMessage": null,
+  "infoCount": 84,
+  "scanElapsedMs": 2707,
+  "scannedAt": "2026-08-15T07:22:47.474Z",
+  "score": 0,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 234,
+  "warningCount": 148
+}

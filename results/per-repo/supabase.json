@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/supabase/supabase",
+  "name": "Supabase",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "supabase",
+  "commitSha": "9be60cab63161100500bdae6dfd45501c5fd8b07",
+  "composeFileCount": 14,
+  "dockerfileCount": 3,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 9,
+  "scanElapsedMs": 1540,
+  "scannedAt": "2026-08-15T07:23:01.722Z",
+  "score": 3,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 70,
+  "warningCount": 61
+}

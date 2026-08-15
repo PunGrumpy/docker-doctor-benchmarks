@@ -1,0 +1,21 @@
+{
+  "doctorVersion": "0.4.1",
+  "githubUrl": "https://github.com/nocodb/nocodb",
+  "name": "NocoDB",
+  "ref": "HEAD",
+  "schemaVersion": 1,
+  "slug": "nocodb",
+  "commitSha": "6a7caa32a2fbf77615c1ac9a4be7d1fc67355f88",
+  "composeFileCount": 15,
+  "dockerfileCount": 0,
+  "errorCount": 0,
+  "errorMessage": null,
+  "infoCount": 0,
+  "scanElapsedMs": 1075,
+  "scannedAt": "2026-08-15T07:22:57.537Z",
+  "score": 6,
+  "scoreLabel": "Critical 🚨",
+  "status": "ok",
+  "totalDiagnosticCount": 49,
+  "warningCount": 49
+}
