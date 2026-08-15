@@ -18,17 +18,18 @@ const END_MARKER = "<!-- LEADERBOARD:END -->";
 const BAR_WIDTH = 20;
 const SCORE_SCALE = 100;
 
-const bucketEmoji = (score: number): string => {
+// Vendored copies of the web app's public/status icons — same bucket
+// thresholds as packages/core scoring (90/75/50/0).
+const bucketIcon = (score: number): string => {
+  let bucket = { label: "Critical", slug: "critical" };
   if (score >= 90) {
-    return "🟢";
+    bucket = { label: "Excellent", slug: "excellent" };
+  } else if (score >= 75) {
+    bucket = { label: "Good", slug: "good" };
+  } else if (score >= 50) {
+    bucket = { label: "Needs Work", slug: "needs-work" };
   }
-  if (score >= 75) {
-    return "🟡";
-  }
-  if (score >= 50) {
-    return "🟠";
-  }
-  return "🔴";
+  return `<img src="assets/status/${bucket.slug}.svg" alt="${bucket.label}" width="10" height="10">`;
 };
 
 const bar = (score: number): string => {
@@ -57,7 +58,7 @@ const SHORT_SHA_LENGTH = 7;
 const rows = ok.map((entry, index) => {
   const files = entry.dockerfileCount + entry.composeFileCount;
   const sha = entry.commitSha.slice(0, SHORT_SHA_LENGTH);
-  return `| ${index + 1} | [${entry.name}](${entry.githubUrl}) | ${bucketEmoji(entry.score)} \`${bar(entry.score)}\` **${entry.score}**/100 | ${entry.errorCount} | ${entry.warningCount} | ${entry.infoCount} | ${files} | \`${sha}\` |`;
+  return `| ${index + 1} | [${entry.name}](${entry.githubUrl}) | ${bucketIcon(entry.score)} \`${bar(entry.score)}\` **${entry.score}**/100 | ${entry.errorCount} | ${entry.warningCount} | ${entry.infoCount} | ${files} | \`${sha}\` |`;
 });
 
 const table = [
