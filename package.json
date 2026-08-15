@@ -6,7 +6,8 @@
     "check": "ultracite check",
     "fix": "ultracite fix",
     "scan": "bun scripts/scan.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render": "bun scripts/render-readme.ts"
   },
   "dependencies": {
     "yaml": "^2.8.0",
