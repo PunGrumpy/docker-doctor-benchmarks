@@ -1,0 +1,90 @@
+# Benchmark targets for docker-doctor-benchmarks.
+#
+# Per-repo fields:
+#   slug        (required) Filename-safe id, must be unique —
+#               names results/per-repo/<slug>.json.
+#   name        (required) Display name in the leaderboard.
+#   githubUrl   (required) https://github.com/<owner>/<repo>
+#   ref         Branch or tag to scan. Default: the default branch's HEAD.
+#   notes       Free-form human comment.
+
+repos:
+  - slug: appsmith
+    name: Appsmith
+    githubUrl: https://github.com/appsmithorg/appsmith
+
+  - slug: cal-com
+    name: Cal.com
+    githubUrl: https://github.com/calcom/cal.com
+
+  - slug: directus
+    name: Directus
+    githubUrl: https://github.com/directus/directus
+
+  - slug: dub
+    name: Dub
+    githubUrl: https://github.com/dubinc/dub
+
+  - slug: formbricks
+    name: Formbricks
+    githubUrl: https://github.com/formbricks/formbricks
+
+  - slug: sentry
+    name: Sentry
+    githubUrl: https://github.com/getsentry/sentry
+
+  - slug: grafana
+    name: Grafana
+    githubUrl: https://github.com/grafana/grafana
+
+  - slug: hoppscotch
+    name: Hoppscotch
+    githubUrl: https://github.com/hoppscotch/hoppscotch
+
+  - slug: immich
+    name: Immich
+    githubUrl: https://github.com/immich-app/immich
+
+  - slug: uptime-kuma
+    name: Uptime Kuma
+    githubUrl: https://github.com/louislam/uptime-kuma
+
+  - slug: plane
+    name: Plane
+    githubUrl: https://github.com/makeplane/plane
+
+  - slug: metabase
+    name: Metabase
+    githubUrl: https://github.com/metabase/metabase
+
+  - slug: n8n
+    name: n8n
+    githubUrl: https://github.com/n8n-io/n8n
+
+  - slug: nocodb
+    name: NocoDB
+    githubUrl: https://github.com/nocodb/nocodb
+
+  - slug: outline
+    name: Outline
+    githubUrl: https://github.com/outline/outline
+
+  - slug: plausible
+    name: Plausible
+    githubUrl: https://github.com/plausible/analytics
+
+  - slug: supabase
+    name: Supabase
+    githubUrl: https://github.com/supabase/supabase
+
+  - slug: ghost
+    name: Ghost
+    githubUrl: https://github.com/TryGhost/Ghost
+
+  - slug: twenty
+    name: Twenty
+    githubUrl: https://github.com/twentyhq/twenty
+
+  - slug: umami
+    name: Umami
+    githubUrl: https://github.com/umami-software/umami
