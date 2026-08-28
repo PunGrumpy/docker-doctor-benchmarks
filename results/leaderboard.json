@@ -2,7 +2,7 @@
   "doctorVersion": "0.4.1",
   "entries": [
     {
-      "commitSha": "a3fd4b9a5a0d8224147296a09af609c022bf0dec",
+      "commitSha": "1cdff8b2d1e310cee731ac648b45875ec1fbd131",
       "composeFileCount": 0,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -15,7 +15,7 @@
       "warningCount": 0
     },
     {
-      "commitSha": "de474a1da915d4666768cad0af0bed5b3449d661",
+      "commitSha": "ca661c7057984aa98ed4f7083d84dae2f65bfcb0",
       "composeFileCount": 1,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -28,7 +28,7 @@
       "warningCount": 3
     },
     {
-      "commitSha": "6b9292a731d5f6a67f046602248a7bcfc7306e4b",
+      "commitSha": "b9794448cc512f494147c1808174b205bbd73a27",
       "composeFileCount": 0,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -41,7 +41,7 @@
       "warningCount": 5
     },
     {
-      "commitSha": "8dcff67801b65ea390674abf272b3d579ea3f27c",
+      "commitSha": "3462d79674bbe3c1161805d956111c2153fb4c6e",
       "composeFileCount": 1,
       "dockerfileCount": 0,
       "errorCount": 0,
@@ -54,7 +54,7 @@
       "warningCount": 6
     },
     {
-      "commitSha": "1309dc26ebb9346d4e67485f1f94a7a56b79c734",
+      "commitSha": "d8d8f2fffed97eaf3e9d48d820c8f1e1facf4008",
       "composeFileCount": 1,
       "dockerfileCount": 2,
       "errorCount": 0,
@@ -67,7 +67,7 @@
       "warningCount": 8
     },
     {
-      "commitSha": "b980621689b2e3b978dcdd3a99a3ad8cf81c9b9b",
+      "commitSha": "a852e21eba4ecf339624b404518c5bc7fad6d45c",
       "composeFileCount": 3,
       "dockerfileCount": 4,
       "errorCount": 0,
@@ -80,7 +80,7 @@
       "warningCount": 14
     },
     {
-      "commitSha": "ff44e3736cbb2b0398415a2f8963aca7f313bf79",
+      "commitSha": "5851753d0cad4678af94382899d371203d651acb",
       "composeFileCount": 2,
       "dockerfileCount": 3,
       "errorCount": 1,
@@ -93,14 +93,14 @@
       "warningCount": 12
     },
     {
-      "commitSha": "6902861b0a2266c2307dad8ab93ae40e332b0901",
+      "commitSha": "acb91d75d02de995d246193fc0bc742875cdd9e8",
       "composeFileCount": 2,
       "dockerfileCount": 5,
       "errorCount": 0,
       "githubUrl": "https://github.com/appsmithorg/appsmith",
-      "infoCount": 10,
+      "infoCount": 11,
       "name": "Appsmith",
-      "score": 33,
+      "score": 32,
       "scoreLabel": "Critical 🚨",
       "slug": "appsmith",
       "warningCount": 17
@@ -132,7 +132,7 @@
       "warningCount": 25
     },
     {
-      "commitSha": "ace2c9b90d1ea2fe60e571cfef9dc3e3edf6340a",
+      "commitSha": "f44bf98ab8c5e1e91da6eb36a64822fa9b200654",
       "composeFileCount": 2,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -145,7 +145,7 @@
       "warningCount": 33
     },
     {
-      "commitSha": "6a7caa32a2fbf77615c1ac9a4be7d1fc67355f88",
+      "commitSha": "55e6f1ffb0cfbacf017aa2852d15cf3582a4badf",
       "composeFileCount": 15,
       "dockerfileCount": 0,
       "errorCount": 0,
@@ -158,8 +158,8 @@
       "warningCount": 49
     },
     {
-      "commitSha": "5f649f3d1f4c49dba27c511c9b8e388a4e10f809",
-      "composeFileCount": 8,
+      "commitSha": "2b25c8261fc83fde8ec2ca152d5938ba6cd5bded",
+      "composeFileCount": 9,
       "dockerfileCount": 6,
       "errorCount": 0,
       "githubUrl": "https://github.com/TryGhost/Ghost",
@@ -168,10 +168,10 @@
       "score": 4,
       "scoreLabel": "Critical 🚨",
       "slug": "ghost",
-      "warningCount": 52
+      "warningCount": 54
     },
     {
-      "commitSha": "cb846b6a1ddc4811359bc52b74bb31a42eab33db",
+      "commitSha": "a6c460a765c590c15b2e4d71e820247cbc25179e",
       "composeFileCount": 2,
       "dockerfileCount": 2,
       "errorCount": 0,
@@ -181,10 +181,10 @@
       "score": 3,
       "scoreLabel": "Critical 🚨",
       "slug": "directus",
-      "warningCount": 59
+      "warningCount": 57
     },
     {
-      "commitSha": "f9c05af45f86aaf2ed2f008dd652c7bfef023528",
+      "commitSha": "6b478924b25768dfea304ec3b8273b8316903304",
       "composeFileCount": 6,
       "dockerfileCount": 5,
       "errorCount": 0,
@@ -197,7 +197,7 @@
       "warningCount": 58
     },
     {
-      "commitSha": "1c8a60f858d8472aa56e29994ec1c7926da2c6ce",
+      "commitSha": "3478d4fac44ca67db5233065f9a21f8817eb763b",
       "composeFileCount": 2,
       "dockerfileCount": 12,
       "errorCount": 0,
@@ -210,8 +210,8 @@
       "warningCount": 48
     },
     {
-      "commitSha": "9be60cab63161100500bdae6dfd45501c5fd8b07",
-      "composeFileCount": 14,
+      "commitSha": "f5f897a29b0f2da952867e36b4017bf0b30e2252",
+      "composeFileCount": 15,
       "dockerfileCount": 3,
       "errorCount": 0,
       "githubUrl": "https://github.com/supabase/supabase",
@@ -220,10 +220,10 @@
       "score": 3,
       "scoreLabel": "Critical 🚨",
       "slug": "supabase",
-      "warningCount": 61
+      "warningCount": 62
     },
     {
-      "commitSha": "45dfb5a83799390c401c502948f9ce68ba532bc2",
+      "commitSha": "57ac36ff71c7cbc1b4831d1fb35b4e29a6e1e63a",
       "composeFileCount": 6,
       "dockerfileCount": 5,
       "errorCount": 0,
@@ -236,12 +236,12 @@
       "warningCount": 69
     },
     {
-      "commitSha": "b186fa87c1b5bb9ffd6562d305ebc611a53e1cce",
+      "commitSha": "2ac36554ffeb1db4bed51723909d2a41e125bdb5",
       "composeFileCount": 7,
       "dockerfileCount": 10,
       "errorCount": 0,
       "githubUrl": "https://github.com/n8n-io/n8n",
-      "infoCount": 38,
+      "infoCount": 40,
       "name": "n8n",
       "score": 1,
       "scoreLabel": "Critical 🚨",
@@ -249,7 +249,7 @@
       "warningCount": 69
     },
     {
-      "commitSha": "59a8cbb6cd0d7a0946767fee57510ac96af8f112",
+      "commitSha": "527e3f6a7ab15c40554a07d2c22f498f4389f504",
       "composeFileCount": 64,
       "dockerfileCount": 32,
       "errorCount": 2,
@@ -262,6 +262,6 @@
       "warningCount": 148
     }
   ],
-  "generatedAt": "2026-08-15T07:23:05.901Z",
+  "generatedAt": "2026-08-28T11:48:41.594Z",
   "schemaVersion": 1
 }
