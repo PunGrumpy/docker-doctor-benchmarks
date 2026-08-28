@@ -5,17 +5,17 @@
   "ref": "HEAD",
   "schemaVersion": 1,
   "slug": "directus",
-  "commitSha": "cb846b6a1ddc4811359bc52b74bb31a42eab33db",
+  "commitSha": "a6c460a765c590c15b2e4d71e820247cbc25179e",
   "composeFileCount": 2,
   "dockerfileCount": 2,
   "errorCount": 0,
   "errorMessage": null,
   "infoCount": 7,
-  "scanElapsedMs": 1058,
-  "scannedAt": "2026-08-15T07:22:41.074Z",
+  "scanElapsedMs": 1049,
+  "scannedAt": "2026-08-28T11:48:17.983Z",
   "score": 3,
   "scoreLabel": "Critical 🚨",
   "status": "ok",
-  "totalDiagnosticCount": 66,
-  "warningCount": 59
+  "totalDiagnosticCount": 64,
+  "warningCount": 57
 }
