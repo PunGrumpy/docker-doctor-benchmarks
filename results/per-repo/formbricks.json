@@ -5,17 +5,17 @@
   "ref": "HEAD",
   "schemaVersion": 1,
   "slug": "formbricks",
-  "commitSha": "f44bf98ab8c5e1e91da6eb36a64822fa9b200654",
+  "commitSha": "243f4bfddfb395ae34221c73a3d38e4d0b551752",
   "composeFileCount": 2,
   "dockerfileCount": 1,
   "errorCount": 0,
   "errorMessage": null,
   "infoCount": 5,
-  "scanElapsedMs": 1176,
-  "scannedAt": "2026-08-28T11:48:20.180Z",
-  "score": 14,
+  "scanElapsedMs": 821,
+  "scannedAt": "2026-09-01T11:07:59.290Z",
+  "score": 7,
   "scoreLabel": "Critical 🚨",
   "status": "ok",
-  "totalDiagnosticCount": 38,
-  "warningCount": 33
+  "totalDiagnosticCount": 51,
+  "warningCount": 46
 }
