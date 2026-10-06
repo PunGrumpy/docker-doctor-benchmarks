@@ -7,8 +7,11 @@
 // - The CLI version is PINNED so results are reproducible and comparable.
 // - Clones are blobless + sparse (Docker files only): a scan downloads
 //   kilobytes, not the repo. docker-doctor never needs the other files.
-// - The CLI exits 1 when a score is < 50, so exit codes mean nothing here —
-//   only failure to produce parseable JSON counts as a scan failure.
+// - The CLI exits 1 on an error-severity finding and 2 when it could not
+//   analyze a discovered file, so exit codes mean nothing here. Only failure
+//   to produce parseable JSON counts as a scan failure.
+// - A repo with unanalyzed files is still ranked. Its score covers the files
+//   the CLI could read, and unanalyzedFileCount records how many it skipped.
 // - A repo where discovery finds zero Docker files is recorded with
 //   status "error", never ranked (an empty checkout would otherwise score
 //   a perfect 100).
@@ -27,10 +30,10 @@ import type {
   ScanResult,
 } from "./lib/types";
 
-const DOCTOR_VERSION = "0.4.1";
+const DOCTOR_VERSION = "0.6.1";
 const RESULTS_SCHEMA_VERSION = 1;
 // @docker-doctor/core JsonReport schema
-const REPORT_SCHEMA_VERSION = 2;
+const REPORT_SCHEMA_VERSION = 4;
 
 const SPARSE_PATTERNS = [
   "**/Dockerfile*",
@@ -144,6 +147,7 @@ const scanRepo = ({ githubUrl, name, ref, slug }: RepoTarget): ScanResult => {
       scoreLabel: report.label,
       status: "ok",
       totalDiagnosticCount: report.diagnostics.length,
+      unanalyzedFileCount: report.failures.length,
       warningCount: counts.warning,
     };
   } catch (error) {
@@ -174,7 +178,7 @@ for (const target of repos) {
   results.push(entry);
   console.error(
     entry.status === "ok"
-      ? `ok   ${entry.slug} score=${entry.score}`
+      ? `ok   ${entry.slug} score=${entry.score} unanalyzed=${entry.unanalyzedFileCount}`
       : `FAIL ${entry.slug}: ${entry.errorMessage}`
   );
 }
