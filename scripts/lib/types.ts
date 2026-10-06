@@ -20,6 +20,8 @@ export interface ScanResultOk extends ScanResultBase {
   scoreLabel: string;
   status: "ok";
   totalDiagnosticCount: number;
+  /** Files the CLI discovered but could not read or parse. */
+  unanalyzedFileCount: number;
   warningCount: number;
 }
 
@@ -51,6 +53,7 @@ export interface LeaderboardEntry {
 /** Shape of the JSON report emitted by `@docker-doctor/cli --json`. */
 export interface DoctorJsonReport {
   diagnostics: { severity: "error" | "warning" | "info" }[];
+  failures: { file: string; message: string }[];
   label: string;
   project: {
     composeFiles: string[];

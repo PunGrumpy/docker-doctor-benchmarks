@@ -10,28 +10,28 @@ The scores below are produced by GitHub Actions on a monthly cron (and on demand
 
 | Rank | Project | Score | Errors | Warnings | Info | Docker files | Commit |
 | --: | --- | :-- | --: | --: | --: | --: | :-: |
-| 1 | [Plausible](https://github.com/plausible/analytics) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **97**/100 | 0 | 0 | 2 | 1 | `08cb519` |
-| 2 | [Umami](https://github.com/umami-software/umami) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **80**/100 | 0 | 3 | 4 | 2 | `ca661c7` |
-| 3 | [Sentry](https://github.com/getsentry/sentry) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `███████████████░░░░░` **73**/100 | 0 | 5 | 2 | 1 | `31579b6` |
-| 4 | [Dub](https://github.com/dubinc/dub) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **70**/100 | 0 | 6 | 1 | 1 | `139bd4a` |
-| 5 | [Outline](https://github.com/outline/outline) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `████████████░░░░░░░░` **60**/100 | 0 | 8 | 4 | 3 | `92af44f` |
-| 6 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████████░░░░░░░░░░░░` **40**/100 | 0 | 14 | 8 | 7 | `013c381` |
-| 7 | [Twenty](https://github.com/twentyhq/twenty) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `███████░░░░░░░░░░░░░` **36**/100 | 1 | 12 | 14 | 5 | `799cfcb` |
-| 8 | [Appsmith](https://github.com/appsmithorg/appsmith) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `██████░░░░░░░░░░░░░░` **32**/100 | 0 | 17 | 11 | 7 | `418ff80` |
-| 9 | [Cal.com](https://github.com/calcom/cal.com) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `██████░░░░░░░░░░░░░░` **28**/100 | 1 | 17 | 11 | 7 | `176037d` |
-| 10 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████░░░░░░░░░░░░░░░░` **20**/100 | 0 | 25 | 13 | 5 | `ac145e7` |
-| 11 | [Formbricks](https://github.com/formbricks/formbricks) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **7**/100 | 0 | 46 | 5 | 3 | `243f4bf` |
-| 12 | [NocoDB](https://github.com/nocodb/nocodb) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **6**/100 | 0 | 49 | 0 | 15 | `0bc2a93` |
-| 13 | [Directus](https://github.com/directus/directus) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 57 | 7 | 4 | `c76747d` |
-| 14 | [Ghost](https://github.com/TryGhost/Ghost) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 1 | 57 | 16 | 17 | `caefa51` |
-| 15 | [Immich](https://github.com/immich-app/immich) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 58 | 19 | 11 | `d441795` |
-| 16 | [Plane](https://github.com/makeplane/plane) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 48 | 46 | 14 | `bc2fce4` |
-| 17 | [Supabase](https://github.com/supabase/supabase) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 62 | 9 | 18 | `911a6c2` |
-| 18 | [Metabase](https://github.com/metabase/metabase) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **2**/100 | 0 | 69 | 16 | 11 | `39ad1d5` |
-| 19 | [n8n](https://github.com/n8n-io/n8n) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **1**/100 | 0 | 69 | 37 | 17 | `ebbcac7` |
-| 20 | [Grafana](https://github.com/grafana/grafana) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **0**/100 | 2 | 148 | 84 | 96 | `b90921a` |
+| 1 | [Plausible](https://github.com/plausible/analytics) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **96**/100 | 0 | 0 | 3 | 1 | `e6d8ee8` |
+| 2 | [Sentry](https://github.com/getsentry/sentry) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **93**/100 | 0 | 1 | 1 | 1 | `642e504` |
+| 3 | [Dub](https://github.com/dubinc/dub) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `████████████░░░░░░░░` **62**/100 | 0 | 8 | 1 | 1 | `d52438d` |
+| 4 | [Outline](https://github.com/outline/outline) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `███████████░░░░░░░░░` **56**/100 | 0 | 9 | 4 | 3 | `15d6592` |
+| 5 | [Twenty](https://github.com/twentyhq/twenty) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████████░░░░░░░░░░░░` **40**/100 | 1 | 12 | 7 | 4 | `8f9a3e2` |
+| 6 | [Umami](https://github.com/umami-software/umami) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `███████░░░░░░░░░░░░░` **36**/100 | 0 | 17 | 4 | 3 | `ec0ff50` |
+| 7 | [Appsmith](https://github.com/appsmithorg/appsmith) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `███████░░░░░░░░░░░░░` **35**/100 | 0 | 16 | 9 | 7 | `f3b5ddb` |
+| 8 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `███████░░░░░░░░░░░░░` **33**/100 | 0 | 17 | 10 | 8 | `2a4d763` |
+| 9 | [Cal.com](https://github.com/calcom/cal.com) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████░░░░░░░░░░░░░░░░` **18**/100 | 1 | 25 | 9 | 7 | `54343aa` |
+| 10 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████░░░░░░░░░░░░░░░░` **18**/100 | 0 | 27 | 11 | 5 | `63273f8` |
+| 11 | [Directus](https://github.com/directus/directus) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `██░░░░░░░░░░░░░░░░░░` **11**/100 | 0 | 38 | 5 | 4 | `9207ae0` |
+| 12 | [Formbricks](https://github.com/formbricks/formbricks) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 62 | 6 | 4 | `3a80e28` |
+| 13 | [Plane](https://github.com/makeplane/plane) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `█░░░░░░░░░░░░░░░░░░░` **3**/100 | 0 | 51 | 52 | 14 | `7466675` |
+| 14 | [Ghost](https://github.com/TryGhost/Ghost) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **1**/100 | 1 | 67 | 17 | 20 | `280e24f` |
+| 15 | [Immich](https://github.com/immich-app/immich) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **1**/100 | 0 | 72 | 22 | 11 | `3f8cfe0` |
+| 16 | [Supabase](https://github.com/supabase/supabase) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **1**/100 | 2 | 76 | 8 | 20 | `9d1661d` |
+| 17 | [Grafana](https://github.com/grafana/grafana) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **0**/100 | 5 | 171 | 81 | 96 | `1794c06` |
+| 18 | [Metabase](https://github.com/metabase/metabase) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **0**/100 | 0 | 88 | 22 | 11 | `01d4659` |
+| 19 | [n8n](https://github.com/n8n-io/n8n) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **0**/100 | 1 | 98 | 38 | 18 | `a13705a` |
+| 20 | [NocoDB](https://github.com/nocodb/nocodb) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `░░░░░░░░░░░░░░░░░░░░` **0**/100 | 3 | 88 | 0 | 15 | `4790618` |
 
-<sub>Last updated <strong>2026-09-01T11:08:13.401Z</strong> · `@docker-doctor/cli` `0.4.1` · 20 scored, 0 failed · raw results in [`results/latest.json`](results/latest.json)</sub>
+<sub>Last updated <strong>2026-10-06T16:03:09.946Z</strong> · `@docker-doctor/cli` `0.6.1` · 20 scored, 0 failed · raw results in [`results/latest.json`](results/latest.json)</sub>
 
 <!-- LEADERBOARD:END -->
 
