@@ -30,10 +30,10 @@ import type {
   ScanResult,
 } from "./lib/types";
 
-const DOCTOR_VERSION = "0.6.1";
+const DOCTOR_VERSION = "0.7.0";
 const RESULTS_SCHEMA_VERSION = 1;
 // @docker-doctor/core JsonReport schema
-const REPORT_SCHEMA_VERSION = 4;
+const REPORT_SCHEMA_VERSION = 5;
 
 const SPARSE_PATTERNS = [
   "**/Dockerfile*",
