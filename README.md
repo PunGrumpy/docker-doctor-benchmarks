@@ -10,28 +10,28 @@ The scores below are produced by GitHub Actions on a monthly cron (and on demand
 
 | Rank | Project | Score | Errors | Warnings | Info | Docker files | Commit |
 | --: | --- | :-- | --: | --: | --: | --: | :-: |
-| 1 | [Plausible](https://github.com/plausible/analytics) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **96**/100 | 0 | 0 | 3 | 1 | `e6d8ee8` |
-| 2 | [Sentry](https://github.com/getsentry/sentry) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **93**/100 | 0 | 1 | 1 | 1 | `e1675c2` |
-| 3 | [Grafana](https://github.com/grafana/grafana) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `██████████████████░░` **88**/100 | 5 | 171 | 81 | 96 | `d5dc5c2` |
-| 4 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **87**/100 | 0 | 17 | 10 | 8 | `2a4d763` |
-| 5 | [Appsmith](https://github.com/appsmithorg/appsmith) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **86**/100 | 0 | 16 | 9 | 7 | `f3b5ddb` |
-| 6 | [Outline](https://github.com/outline/outline) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **83**/100 | 0 | 9 | 4 | 3 | `15d6592` |
-| 7 | [Ghost](https://github.com/TryGhost/Ghost) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **81**/100 | 1 | 67 | 17 | 20 | `7c5091d` |
-| 8 | [Supabase](https://github.com/supabase/supabase) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **79**/100 | 2 | 76 | 8 | 20 | `9d1661d` |
-| 9 | [Twenty](https://github.com/twentyhq/twenty) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **79**/100 | 1 | 12 | 7 | 4 | `7008b9a` |
-| 10 | [Cal.com](https://github.com/calcom/cal.com) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **78**/100 | 1 | 25 | 9 | 7 | `54343aa` |
-| 11 | [Plane](https://github.com/makeplane/plane) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `███████████████░░░░░` **77**/100 | 0 | 51 | 52 | 14 | `7466675` |
-| 12 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **71**/100 | 0 | 27 | 11 | 5 | `63273f8` |
-| 13 | [n8n](https://github.com/n8n-io/n8n) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **71**/100 | 1 | 98 | 38 | 18 | `b36c2b5` |
-| 14 | [Umami](https://github.com/umami-software/umami) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **71**/100 | 0 | 17 | 4 | 3 | `ec0ff50` |
-| 15 | [NocoDB](https://github.com/nocodb/nocodb) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **70**/100 | 3 | 88 | 0 | 15 | `4790618` |
-| 16 | [Immich](https://github.com/immich-app/immich) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `█████████████░░░░░░░` **67**/100 | 0 | 72 | 22 | 11 | `3f8cfe0` |
-| 17 | [Dub](https://github.com/dubinc/dub) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `████████████░░░░░░░░` **62**/100 | 0 | 8 | 1 | 1 | `e402a1e` |
-| 18 | [Metabase](https://github.com/metabase/metabase) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `████████████░░░░░░░░` **62**/100 | 0 | 88 | 22 | 11 | `355147d` |
-| 19 | [Directus](https://github.com/directus/directus) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `███████████░░░░░░░░░` **57**/100 | 0 | 38 | 5 | 4 | `9207ae0` |
-| 20 | [Formbricks](https://github.com/formbricks/formbricks) | <img src="assets/status/critical.svg" alt="Critical" width="10" height="10"> `████████░░░░░░░░░░░░` **40**/100 | 0 | 62 | 6 | 4 | `3a80e28` |
+| 1 | [Plausible](https://github.com/plausible/analytics) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **96**/100 | 0 | 0 | 3 | 1 | `02cfac1` |
+| 2 | [Sentry](https://github.com/getsentry/sentry) | <img src="assets/status/excellent.svg" alt="Excellent" width="10" height="10"> `███████████████████░` **93**/100 | 0 | 1 | 1 | 1 | `063a6cb` |
+| 3 | [Grafana](https://github.com/grafana/grafana) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `██████████████████░░` **88**/100 | 5 | 171 | 81 | 96 | `01f74f7` |
+| 4 | [Uptime Kuma](https://github.com/louislam/uptime-kuma) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **87**/100 | 0 | 17 | 10 | 8 | `cbd357e` |
+| 5 | [Appsmith](https://github.com/appsmithorg/appsmith) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **86**/100 | 0 | 16 | 9 | 7 | `7bf6d36` |
+| 6 | [Outline](https://github.com/outline/outline) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `█████████████████░░░` **83**/100 | 0 | 9 | 4 | 3 | `5b13e91` |
+| 7 | [Ghost](https://github.com/TryGhost/Ghost) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **82**/100 | 1 | 64 | 19 | 20 | `45498ed` |
+| 8 | [Supabase](https://github.com/supabase/supabase) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **79**/100 | 2 | 76 | 8 | 20 | `a05e7ec` |
+| 9 | [Twenty](https://github.com/twentyhq/twenty) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **79**/100 | 1 | 15 | 11 | 5 | `6a1f828` |
+| 10 | [Cal.com](https://github.com/calcom/cal.com) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `████████████████░░░░` **78**/100 | 1 | 25 | 9 | 7 | `f972fee` |
+| 11 | [Plane](https://github.com/makeplane/plane) | <img src="assets/status/good.svg" alt="Good" width="10" height="10"> `███████████████░░░░░` **77**/100 | 0 | 50 | 54 | 14 | `b98e1de` |
+| 12 | [Hoppscotch](https://github.com/hoppscotch/hoppscotch) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **71**/100 | 0 | 27 | 11 | 5 | `39d2565` |
+| 13 | [Umami](https://github.com/umami-software/umami) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **71**/100 | 0 | 17 | 4 | 3 | `559e3c6` |
+| 14 | [NocoDB](https://github.com/nocodb/nocodb) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **70**/100 | 3 | 88 | 0 | 15 | `8dd1fcc` |
+| 15 | [n8n](https://github.com/n8n-io/n8n) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████████░░░░░░` **68**/100 | 1 | 120 | 40 | 20 | `f5ed6cc` |
+| 16 | [Immich](https://github.com/immich-app/immich) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `█████████████░░░░░░░` **67**/100 | 0 | 72 | 22 | 11 | `b7510e7` |
+| 17 | [Metabase](https://github.com/metabase/metabase) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `█████████████░░░░░░░` **63**/100 | 0 | 92 | 22 | 12 | `085a8e1` |
+| 18 | [Dub](https://github.com/dubinc/dub) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `████████████░░░░░░░░` **62**/100 | 0 | 8 | 1 | 1 | `6b463b4` |
+| 19 | [Directus](https://github.com/directus/directus) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `███████████░░░░░░░░░` **57**/100 | 0 | 38 | 5 | 4 | `c40ab79` |
+| 20 | [Formbricks](https://github.com/formbricks/formbricks) | <img src="assets/status/needs-work.svg" alt="Needs Work" width="10" height="10"> `██████████░░░░░░░░░░` **51**/100 | 0 | 68 | 11 | 6 | `fa28916` |
 
-<sub>Last updated <strong>2026-10-06T16:32:15.793Z</strong> · `@docker-doctor/cli` `0.7.0` · 20 scored, 0 failed · raw results in [`results/latest.json`](results/latest.json)</sub>
+<sub>Last updated <strong>2026-11-01T12:42:34.027Z</strong> · `@docker-doctor/cli` `0.7.0` · 20 scored, 0 failed · raw results in [`results/latest.json`](results/latest.json)</sub>
 
 <!-- LEADERBOARD:END -->
 

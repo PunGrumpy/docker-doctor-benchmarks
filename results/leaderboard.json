@@ -2,7 +2,7 @@
   "doctorVersion": "0.7.0",
   "entries": [
     {
-      "commitSha": "e6d8ee867afe78bc2f5da007d542f14df736c413",
+      "commitSha": "02cfac1517e1fef8178afe134a9b42f309f1aa77",
       "composeFileCount": 0,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -15,7 +15,7 @@
       "warningCount": 0
     },
     {
-      "commitSha": "e1675c2e92095a0e38ba9b0726a48d7696e3c114",
+      "commitSha": "063a6cb279fc42752e31ee200331f553f35ec26f",
       "composeFileCount": 0,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -28,7 +28,7 @@
       "warningCount": 1
     },
     {
-      "commitSha": "d5dc5c2b5d23f6349b1adb06a1aad563034cbb00",
+      "commitSha": "01f74f769f0e047658e9927dfe1e7c33bdd73900",
       "composeFileCount": 64,
       "dockerfileCount": 32,
       "errorCount": 5,
@@ -41,7 +41,7 @@
       "warningCount": 171
     },
     {
-      "commitSha": "2a4d7635a9146bd26abbeeef41e6fd833c615e92",
+      "commitSha": "cbd357eb3982700132531dd8e7d66158d6c1f3e1",
       "composeFileCount": 3,
       "dockerfileCount": 5,
       "errorCount": 0,
@@ -54,7 +54,7 @@
       "warningCount": 17
     },
     {
-      "commitSha": "f3b5ddb4a5a8202724e5fe70d89d5660c149f1ee",
+      "commitSha": "7bf6d367d0d0cd2f3b3e43d9678caad2dae03ca3",
       "composeFileCount": 2,
       "dockerfileCount": 5,
       "errorCount": 0,
@@ -67,7 +67,7 @@
       "warningCount": 16
     },
     {
-      "commitSha": "15d659299365012ae217d34deced6a9d05ade204",
+      "commitSha": "5b13e915d800b3558e8eb15ae7b41e6a36ae2da5",
       "composeFileCount": 1,
       "dockerfileCount": 2,
       "errorCount": 0,
@@ -80,20 +80,20 @@
       "warningCount": 9
     },
     {
-      "commitSha": "7c5091de287ee33c65c547bd681f973365767436",
-      "composeFileCount": 12,
-      "dockerfileCount": 8,
+      "commitSha": "45498ed2eca0585e3542c852e57b275581a78d63",
+      "composeFileCount": 11,
+      "dockerfileCount": 9,
       "errorCount": 1,
       "githubUrl": "https://github.com/TryGhost/Ghost",
-      "infoCount": 17,
+      "infoCount": 19,
       "name": "Ghost",
-      "score": 81,
+      "score": 82,
       "scoreLabel": "Good ✅",
       "slug": "ghost",
-      "warningCount": 67
+      "warningCount": 64
     },
     {
-      "commitSha": "9d1661dec1548ec5bf3ffb4f551376a7650c213e",
+      "commitSha": "a05e7ec1d79e67cba65e3871b7caf105db27f8b1",
       "composeFileCount": 16,
       "dockerfileCount": 4,
       "errorCount": 2,
@@ -106,20 +106,20 @@
       "warningCount": 76
     },
     {
-      "commitSha": "7008b9a1cba81f07d53be39ad6dd34ebb8010890",
+      "commitSha": "6a1f828c9f0a202216b398709c79b2228e679921",
       "composeFileCount": 2,
-      "dockerfileCount": 2,
+      "dockerfileCount": 3,
       "errorCount": 1,
       "githubUrl": "https://github.com/twentyhq/twenty",
-      "infoCount": 7,
+      "infoCount": 11,
       "name": "Twenty",
       "score": 79,
       "scoreLabel": "Good ✅",
       "slug": "twenty",
-      "warningCount": 12
+      "warningCount": 15
     },
     {
-      "commitSha": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+      "commitSha": "f972feefa1376cf47631177231c671da9a9dd09f",
       "composeFileCount": 5,
       "dockerfileCount": 2,
       "errorCount": 1,
@@ -132,20 +132,20 @@
       "warningCount": 25
     },
     {
-      "commitSha": "7466675e471efe1c96b122615f7a0d30c9b2eb05",
+      "commitSha": "b98e1defb0e089d4505712d89ee9e137fd0935cd",
       "composeFileCount": 2,
       "dockerfileCount": 12,
       "errorCount": 0,
       "githubUrl": "https://github.com/makeplane/plane",
-      "infoCount": 52,
+      "infoCount": 54,
       "name": "Plane",
       "score": 77,
       "scoreLabel": "Good ✅",
       "slug": "plane",
-      "warningCount": 51
+      "warningCount": 50
     },
     {
-      "commitSha": "63273f8e599e73f0fb38c0739314e8d46b6bc83d",
+      "commitSha": "39d25650bdb4e86464b2cd69174c567b86f57892",
       "composeFileCount": 2,
       "dockerfileCount": 3,
       "errorCount": 0,
@@ -158,20 +158,7 @@
       "warningCount": 27
     },
     {
-      "commitSha": "b36c2b506b92f391f859ec10067e57d96c8b09c8",
-      "composeFileCount": 7,
-      "dockerfileCount": 11,
-      "errorCount": 1,
-      "githubUrl": "https://github.com/n8n-io/n8n",
-      "infoCount": 38,
-      "name": "n8n",
-      "score": 71,
-      "scoreLabel": "Needs Work ⚠️",
-      "slug": "n8n",
-      "warningCount": 98
-    },
-    {
-      "commitSha": "ec0ff50388c264ed8ce46f00967e92f7e71476ae",
+      "commitSha": "559e3c607c23d2c72d9bd4f6481bda428255323c",
       "composeFileCount": 2,
       "dockerfileCount": 1,
       "errorCount": 0,
@@ -184,7 +171,7 @@
       "warningCount": 17
     },
     {
-      "commitSha": "47906184a33323baf46dde314505f604ba9a5b5a",
+      "commitSha": "8dd1fcc5f02191f3a266fdc59b476e25381a5e40",
       "composeFileCount": 15,
       "dockerfileCount": 0,
       "errorCount": 3,
@@ -197,7 +184,20 @@
       "warningCount": 88
     },
     {
-      "commitSha": "3f8cfe0b70ef3807753e5789907138cbd312072a",
+      "commitSha": "f5ed6cc72cdc2f9270cbddf05761e8c1fddc9b60",
+      "composeFileCount": 8,
+      "dockerfileCount": 12,
+      "errorCount": 1,
+      "githubUrl": "https://github.com/n8n-io/n8n",
+      "infoCount": 40,
+      "name": "n8n",
+      "score": 68,
+      "scoreLabel": "Needs Work ⚠️",
+      "slug": "n8n",
+      "warningCount": 120
+    },
+    {
+      "commitSha": "b7510e79ac2c13dc48592fe9f9e3508683f2839e",
       "composeFileCount": 6,
       "dockerfileCount": 5,
       "errorCount": 0,
@@ -210,7 +210,20 @@
       "warningCount": 72
     },
     {
-      "commitSha": "e402a1e079e182154f9993bc68351ff2bff1ae70",
+      "commitSha": "085a8e1c037bfcbf04ba7b47406572fd19637466",
+      "composeFileCount": 7,
+      "dockerfileCount": 5,
+      "errorCount": 0,
+      "githubUrl": "https://github.com/metabase/metabase",
+      "infoCount": 22,
+      "name": "Metabase",
+      "score": 63,
+      "scoreLabel": "Needs Work ⚠️",
+      "slug": "metabase",
+      "warningCount": 92
+    },
+    {
+      "commitSha": "6b463b4bdd9ed2fd9aa416f67b5b77d317b1471e",
       "composeFileCount": 1,
       "dockerfileCount": 0,
       "errorCount": 0,
@@ -223,20 +236,7 @@
       "warningCount": 8
     },
     {
-      "commitSha": "355147d6a9a4c7ecbd6894ee24c5cdfdc4b97990",
-      "composeFileCount": 6,
-      "dockerfileCount": 5,
-      "errorCount": 0,
-      "githubUrl": "https://github.com/metabase/metabase",
-      "infoCount": 22,
-      "name": "Metabase",
-      "score": 62,
-      "scoreLabel": "Needs Work ⚠️",
-      "slug": "metabase",
-      "warningCount": 88
-    },
-    {
-      "commitSha": "9207ae0545a3f3a05c1b95fdb3f9891b96dfa527",
+      "commitSha": "c40ab79f2c4ac573b2c7424b2c591fd79f7b116f",
       "composeFileCount": 2,
       "dockerfileCount": 2,
       "errorCount": 0,
@@ -249,19 +249,19 @@
       "warningCount": 38
     },
     {
-      "commitSha": "3a80e2895a6afe38bae32fba7872b5a54d980be4",
-      "composeFileCount": 2,
-      "dockerfileCount": 2,
+      "commitSha": "fa289168d43699043e8e4016c3aa38bc3109f865",
+      "composeFileCount": 3,
+      "dockerfileCount": 3,
       "errorCount": 0,
       "githubUrl": "https://github.com/formbricks/formbricks",
-      "infoCount": 6,
+      "infoCount": 11,
       "name": "Formbricks",
-      "score": 40,
-      "scoreLabel": "Critical 🚨",
+      "score": 51,
+      "scoreLabel": "Needs Work ⚠️",
       "slug": "formbricks",
-      "warningCount": 62
+      "warningCount": 68
     }
   ],
-  "generatedAt": "2026-10-06T16:32:15.793Z",
+  "generatedAt": "2026-11-01T12:42:34.027Z",
   "schemaVersion": 1
 }
